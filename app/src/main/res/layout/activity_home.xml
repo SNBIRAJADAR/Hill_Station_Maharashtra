@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:background="@color/teal_700"
+                    android:contentDescription="@string/app_name">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="220dp"
+                        android:background="@color/teal_700"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="400dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:contentDescription="@string/todo"
+                            android:padding="15dp"
+                            android:src="@drawable/logo"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <ImageView
+                            android:layout_width="400dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:contentDescription="@string/todo"
+                            android:padding="15dp"
+                            android:src="@drawable/logo" />
+
+                        <ImageView
+                            android:layout_width="400dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:contentDescription="@string/todo"
+                            android:padding="15dp"
+                            android:src="@drawable/logo" />
+
+                        <ImageView
+                            android:layout_width="400dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:contentDescription="@string/todo"
+                            android:padding="15dp"
+                            android:src="@drawable/logo"
+                            tools:ignore="ImageContrastCheck" />
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <TextView
+                    android:padding="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/places"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#220202"
+                    />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/Sangli"
+                            android:layout_width="390dp"
+                            android:layout_height="210dp"
+                            android:layout_margin="10dp"
+                            android:contentDescription="@string/todo"
+                            android:src="@drawable/logo"
+                            tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck">
+
+                        </ImageButton>
+                        <ImageButton
+                            android:layout_margin="10dp"
+                            android:layout_width="390dp"
+                            android:layout_height="210dp"
+                            android:src="@drawable/logo"
+                            android:contentDescription="@string/todo">
+
+                        </ImageButton>
+                        <ImageButton
+                            android:layout_margin="10dp"
+                            android:layout_width="390dp"
+                            android:layout_height="210dp"
+                            android:src="@drawable/logo"
+                            android:contentDescription="@string/todo">
+
+                        </ImageButton>
+                        <ImageButton
+                            android:layout_margin="10dp"
+                            android:layout_width="390dp"
+                            android:layout_height="210dp"
+                            android:src="@drawable/logo"
+                            android:contentDescription="@string/todo">
+
+                        </ImageButton>
+
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/popular_places"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#220202"/>
+
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
